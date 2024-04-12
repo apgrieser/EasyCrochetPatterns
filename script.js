@@ -8,8 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
     //         navMenu.classList.toggle('is-active');
     //     });
     // }
-    var navLinks = document.querySelectorAll('nav ul li a');
 
+    // Scroll to the top of the page when the page loads
+    // console.log('Scrolling to top');
+    // window.scrollTo({ top: 0, behavior: 'auto' });
+    // console.log('Scrolled to top');
+
+    var navLinks = document.querySelectorAll('nav ul li a');
+    var backToTop = document.querySelector('.back-to-top');
+
+    // Scroll to the position on the page that matches the nav menu
     navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default anchor behavior
@@ -22,4 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Scroll back to the top of the window    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) { // Adjust the scroll position as needed
+            backToTop.classList.add('show-back-to-top');
+        } else {
+            backToTop.classList.remove('show-back-to-top');
+        }
+    });
+    
+    backToTop.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
 });

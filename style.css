@@ -65,8 +65,36 @@ footer {
   background-color: #b0c4b1;
   color: #4a5759;
   text-align: center;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  padding: 20px 0;
+  position: relative;
+  /* bottom: 0;
+  width: 100%; */
+}
+
+.back-to-top {
+  display: none;
+  /* position: absolute; */
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  /* bottom: 80px; */
+  bottom: 5%;
+  right: 5%;
+  /* right: 20px; */
+  text-align: center;
+  background-color: #4a5759;
+  color: #b0c4b1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #edafb8;
+  color: #4a5759;
+}
+
+/* Show the back-to-top link when the user scrolls down */
+.show-back-to-top {
+  display: block;
 }
