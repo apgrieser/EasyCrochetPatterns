@@ -98,3 +98,81 @@ footer {
 .show-back-to-top {
   display: block;
 }
+
+
+/* Indent a paragraph under each list item */
+#home ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#home li {
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+#home li {
+  padding-left: 20px; /* Indent paragraphs under list items */
+}
+
+#home p {
+  padding-left: 40px; /* Indent paragraphs under list items */
+}
+
+#home p.no-indent {
+  padding-left: 0;
+}
+
+/* Indent a paragraph under each list item */
+#whycrochet ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#whycrochet li {
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+#whycrochet li {
+  padding-left: 20px; /* Indent paragraphs under list items */
+}
+
+#whycrochet p {
+  padding-left: 40px; /* Indent paragraphs under list items */
+  margin-bottom: 10px;
+}
+
+#whycrochet p.no-indent {
+  padding-left: 0;
+}
+
+/* #whycrochet li {
+ /* width: 100px; /* Set the width of the image */
+ /* margin-right: 20px; /* Add space between image and text */
+/*} */
+
+#patterns li {
+  padding-left: 10px;
+  display: flex;   /* This line is needed to properly align img with text; however in Safari it causes bullets to disappear! */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#patterns li::before {
+  content: "\2022"; /* Bullet character (•) */
+  color: #4a5759; /* Bullet color */
+  font-size: 0.8em; /* Bullet size */
+  margin-right: 10px; /* Spacing between bullet and content */
+}
+
+#patterns ul {
+  padding: 10px;
+  list-style-type: none; /* Display bullet points */
+}
+
+#patterns li img {
+  width: 100px; /* Set the width of the image */
+  border-radius: 10px; /* Round the corners of the image */
+  margin-right: 10px;
+}
+
+
