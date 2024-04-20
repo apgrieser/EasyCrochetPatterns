@@ -23,33 +23,25 @@
 
 
 
-/* .ballet-huh {
-  font-family: "Ballet", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
-
-
 p {
   font-family: "Bellota", cursive;
   font-weight: 400;
   font-style: normal;
-  color: blue;
+  color: #303625;
 }
 
 h1 {
   font-family: "Bellota", cursive;
   font-weight: 400;
   font-style: normal;
-  color: red;
+  color: #8E4A49;
 }
 
 h2 {
   font-family: "Bellota", cursive;
   font-weight: 400;
   font-style: normal;
-  color: green;
+  color: #55793e;
 }
 
 body {
@@ -58,13 +50,13 @@ body {
   font-weight: 1 10;
   margin: 0;
   padding: 0;
-  background-color: #f7e1d7;
-  color: #4a5759;
+  background-color: #F1DDc6;
+  color: #0d202A;
 }
 
 header {
-  background-color: #b0c4b1;
-  color: #4a5759;
+  background-color: #eab462;
+  color: #4a0f0f;
   padding: 10px 20px;
   text-align: center;
   top: 0;
@@ -83,7 +75,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: 4a5759;
+  color: #0e1011;
   text-decoration: none;
 }
 
@@ -95,46 +87,10 @@ section {
   margin-bottom: 20px;
 }
 
-footer {
-  background-color: #b0c4b1;
-  color: #4a5759;
-  text-align: center;
-  /* padding: 10px 20px; */
-  padding: 20px 0;
-  position: relative;
-  /* bottom: 0;
-  width: 100%; */
-}
-
-.back-to-top {
-  display: none;
-  /* position: absolute; */
-  position: fixed;
-  /* bottom: 80px; */
-  bottom: 5%;
-  right: 5%;
-  /* right: 20px; */
-  text-align: center;
-  background-color: #4a5759;
-  color: #b0c4b1;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-
-.back-to-top:hover {
-  background-color: #edafb8;
-  color: #4a5759;
-}
-
-/* Show the back-to-top link when the user scrolls down */
-.show-back-to-top {
-  display: block;
-}
 
 
 /* Indent a paragraph under each list item */
+
 #home ul {
   list-style-type: none;
   padding: 0;
@@ -155,6 +111,18 @@ footer {
 #home p.no-indent {
   padding-left: 0;
 }
+
+/* Style a warning message */
+#home p.warning {
+  /* background-color: red; */
+  font-size:xx-large;
+  font-style:oblique;
+  font-weight: bold;
+  color: #cd111e;
+  text-align: center;
+  padding: 10px 20px;
+}
+
 
 /* Indent a paragraph under each list item */
 #whycrochet ul {
@@ -207,6 +175,45 @@ footer {
   width: 100px; /* Set the width of the image */
   border-radius: 10px; /* Round the corners of the image */
   margin-right: 10px;
+}
+
+#footer-section p {
+  background-color: #4a0f0f;
+  color: #eab462;
+  text-align: center;
+  /* padding: 10px 20px; */
+  padding: 40px 0;
+  /* position: relative; */
+  bottom: 0;
+  /* width: 100%;  */
+}
+
+.back-to-top { 
+  display: none;
+  /* position: absolute; */
+  position: fixed;
+  /* bottom: 80px; */
+  bottom: 5%;
+  right: 5%;
+  /* right: 20px; */
+  text-align: center;
+  background-color: #f59c0c;
+  color: #24341a;
+  
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+} 
+
+.back-to-top:hover {
+  background-color:   #55793e;
+  color: #f59c0c;
+}
+
+/* Show the back-to-top link when the user scrolls down */
+.show-back-to-top {
+  display: block;
 }
 
 
