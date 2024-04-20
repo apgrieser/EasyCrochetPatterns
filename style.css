@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-family: "Bellota", cursive;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   color: #55793e;
 }
@@ -57,7 +57,20 @@ body {
 header {
   background-color: #eab462;
   color: #4a0f0f;
+  font-weight: 400;
   padding: 10px 20px;
+  text-align: center;
+  top: 0;
+  position: relative;
+  width: 100%;
+}
+
+.header-bolded {
+  background-color: #eab462;
+  color: #4a0f0f;
+  font-weight: 800;
+  font-style:italic;
+  /* padding: 10px 20px; */
   text-align: center;
   top: 0;
   position: relative;
@@ -76,6 +89,7 @@ nav ul li {
 
 nav ul li a {
   color: #0e1011;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -182,10 +196,11 @@ section {
   color: #eab462;
   text-align: center;
   /* padding: 10px 20px; */
-  padding: 40px 0;
+  padding: 30px;
   /* position: relative; */
+  position: flow;
   bottom: 0;
-  /* width: 100%;  */
+  width: 100%; 
 }
 
 .back-to-top { 
@@ -199,7 +214,6 @@ section {
   text-align: center;
   background-color: #f59c0c;
   color: #24341a;
-  
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
